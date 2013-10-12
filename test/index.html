@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Deputat Tests</title>
+    <link rel="stylesheet" href="/node_modules/mocha/mocha.css" />
+    <style>
+        .toast-message, #main { display: none }
+        #deputat-content {display: none}
+    </style>
+</head>
+<body>
+<div id="mocha"></div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/node_modules/chai/chai.js"></script>
+<script src="/node_modules/mocha/mocha.js"></script>
+<script src="/js/lib/require.js"></script>
+<script src="/js/main.js"></script>
+<script src="setup.js"></script>
+<script src="deputat.test.js"></script>
+<script>require(['deputat'], function() { mocha.run(); });</script>
+</body>
+</html>
